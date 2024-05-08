@@ -16,4 +16,5 @@
 - When the Button of Bluepill1 is pressed the LED connected to the Bluepill2 is performing blinking operation as per the data send over the CAN bus, and viceversa.
 
 ** Refer "multican.pdf" Schematic for connection **
-
+# NOTE - Common Ground is required for CAN communication if power supply is used
+        - Provide 5V for MCP2551 for CAN communication or else CAN will not send the data on the bus.

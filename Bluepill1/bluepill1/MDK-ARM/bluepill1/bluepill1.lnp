@@ -1,0 +1,24 @@
+--cpu Cortex-M3
+"bluepill1\startup_stm32f103xb.o"
+"bluepill1\main.o"
+"bluepill1\stm32f1xx_it.o"
+"bluepill1\stm32f1xx_hal_msp.o"
+"bluepill1\stm32f1xx_hal_gpio_ex.o"
+"bluepill1\stm32f1xx_hal_can.o"
+"bluepill1\stm32f1xx_hal.o"
+"bluepill1\stm32f1xx_hal_rcc.o"
+"bluepill1\stm32f1xx_hal_rcc_ex.o"
+"bluepill1\stm32f1xx_hal_gpio.o"
+"bluepill1\stm32f1xx_hal_dma.o"
+"bluepill1\stm32f1xx_hal_cortex.o"
+"bluepill1\stm32f1xx_hal_pwr.o"
+"bluepill1\stm32f1xx_hal_flash.o"
+"bluepill1\stm32f1xx_hal_flash_ex.o"
+"bluepill1\stm32f1xx_hal_exti.o"
+"bluepill1\stm32f1xx_hal_tim.o"
+"bluepill1\stm32f1xx_hal_tim_ex.o"
+"bluepill1\system_stm32f1xx.o"
+--strict --scatter "bluepill1\bluepill1.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "bluepill1.map" -o bluepill1\bluepill1.axf
